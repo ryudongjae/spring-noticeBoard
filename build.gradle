@@ -28,6 +28,7 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
+	runtimeOnly 'org.webjars:bootstrap:4.5.0'
 }
 
 test {
