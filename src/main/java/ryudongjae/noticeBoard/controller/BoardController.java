@@ -10,15 +10,13 @@ import ryudongjae.noticeBoard.board.dto.FileDto;
 import ryudongjae.noticeBoard.board.service.BoardService;
 import ryudongjae.noticeBoard.board.service.FileService;
 import ryudongjae.noticeBoard.board.util.MD5Generator;
-import ryudongjae.noticeBoard.domain.entity.Board;
 
 import java.io.File;
-import java.io.UnsupportedEncodingException;
-import java.security.NoSuchAlgorithmException;
 import java.util.List;
 
 //http요청이 진입하는 지점이며,사용자에게 서버에서 처리된 데이터를 View와 함께 응답하게 해줍니다.
-
+//제목, 작성자, 내용을 작성하면 입력한 데이터가 데이터베이스에 저장되어야 합니다.
+// 글쓰기 페이지에서 ‘글쓰기’ 버튼을 누르면, Post 방식으로 /post에 요청이 온다.
 @Controller
 public class BoardController {
     private BoardService boardService;
