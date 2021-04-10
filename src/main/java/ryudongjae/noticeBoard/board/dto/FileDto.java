@@ -4,7 +4,7 @@ import lombok.*;
 import ryudongjae.noticeBoard.domain.entity.File;
 
 import javax.persistence.Entity;
-///disdsdsdasdasd
+///dis
 @ToString
 @Getter
 @Setter
